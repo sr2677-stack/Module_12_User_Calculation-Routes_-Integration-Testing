@@ -11,6 +11,9 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+    env:
+      DATABASE_URL: sqlite:///./ci_app.db
+      TEST_DATABASE_URL: sqlite:///./ci_test.db
 
     steps:
       - name: Checkout code
