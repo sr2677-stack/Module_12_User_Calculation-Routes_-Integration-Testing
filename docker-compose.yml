@@ -13,6 +13,6 @@ services:
     ports:
       - "8000:8000"
     environment:
-            DATABASE_URL: postgresql://postgres:password@db:5432/calcdb
+      DATABASE_URL: postgresql://postgres:password@db:5432/calcdb
     depends_on:
       - db
