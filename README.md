@@ -89,7 +89,7 @@ Image name configured in workflow:
 - `DOCKERHUB_USERNAME/module12-fastapi-app`
 
 Repository link (replace username with yours):
-- `https://hub.docker.com/r/<your-dockerhub-username>/module12-fastapi-app`
+- `https://hub.docker.com/r/sr2677stack/module12-fastapi-app`
 
 ## Submission Checklist
 
