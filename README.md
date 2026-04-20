@@ -28,13 +28,13 @@ python -m venv .venv
 .venv\Scripts\Activate.ps1
 
 pip install -r requirements.txt
-uvicorn app.main:app --reload
+uvicorn app.main:app --reload --port 8001
 ```
 
 Open:
-- Swagger docs: `http://127.0.0.1:8000/docs`
-- ReDoc: `http://127.0.0.1:8000/redoc`
-- Health: `http://127.0.0.1:8000/health`
+- Swagger docs: `http://127.0.0.1:8001/docs`
+- ReDoc: `http://127.0.0.1:8001/redoc`
+- Health: `http://127.0.0.1:8001/health`
 
 ## Run Integration Tests Locally
 
@@ -48,7 +48,7 @@ Run tests against PostgreSQL (optional):
 
 ```bash
 # Example:
-# set TEST_DATABASE_URL=postgresql://postgres:password@localhost:5444/calcdb_test
+# $env:TEST_DATABASE_URL="postgresql://postgres:password@localhost:5444/calcdb_test"
 pytest -v
 ```
 
@@ -59,7 +59,7 @@ docker compose up --build
 ```
 
 API will be available at:
-- `http://localhost:8000/docs`
+- `http://localhost:8001/docs`
 
 Stop containers:
 
